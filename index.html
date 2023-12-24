@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enmer | Front-end</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="content block lg:flex">
+        <!-- Aqui inicia el aside -->
+        <div
+          class="aside lg:sticky top-0 p-7 h-screen w-full lg:w-[15%] bg-gray-900 text-white"
+        >
+          <div class="info">
+            <img
+              class="rounded-full w-36 mx-auto"
+              src="./src/img/yo-48.webp"
+              alt="foto de Enmer"
+            />
+            <h2 class="text-center  text-xl sm:text-3xl lg:text-2xl mt-3">
+              Enmer Suasaca
+            </h2>
+            <h2 class="text-center  font-semibold block lg:hidden text-2xl sm:text-3xl lg:text-2xl animate-pulse">
+              Frontend Developer
+            </h2>
+            <div class="enlaces flex justify-center gap-x-3 text-center mt-10 lg:mt-3">
+              <a href="https://github.com/EnmerPe" target="_blank" rel="noopener noreferrer"
+                ><i
+                  class="bi bi-github text-2xl transition-colors duration-300 hover:text-cyan-500"
+                ></i
+              ></a>
+              <a href="https://www.linkedin.com/in/emed-sc-787734254/" target="_blank" rel="noopener noreferrer"
+                ><i
+                  class="bi bi-linkedin text-2xl transition-colors duration-300 hover:text-cyan-500"
+                ></i
+              ></a>
+            </div>
+            <nav
+              class="mt-12 lg:mt-7 mx-auto lg:mx-0 text-center lg:text-left w-[50%] lg:w-full flex flex-col gap-y-4 sm:gap-y-2 md:gap-y-8 lg:gap-y-6 text-xl sm:text-3xl lg:text-lg font-semibold"
+            >
+              <a
+                href="#"
+                class="group transition-colors duration-300 text-gray-400 hover:text-white"
+                ><i
+                  class="bi bi-house-door text-gray-400 group-hover:text-cyan-500"
+                ></i>
+                Home</a
+              >
+              <a
+                href="#about"
+                class="group transition-colors duration-300 text-gray-400 hover:text-white"
+                ><i
+                  class="bi bi-person-fill text-gray-400 group-hover:text-cyan-500"
+                ></i>
+                About</a
+              >
+              <a
+                href="#resumen"
+                class="group transition-colors duration-300 text-gray-400 hover:text-white"
+                ><i
+                  class="bi bi-paperclip text-gray-400 group-hover:text-cyan-500"
+                ></i>
+                Resume</a
+              >
+              <a
+                href="#portafolio"
+                class="group transition-colors duration-300 text-gray-400 hover:text-white"
+                ><i
+                  class="bi bi-book-half text-gray-400 group-hover:text-cyan-500"
+                ></i>
+                Portfolio</a
+              >
+              <a
+                href="#servicios"
+                class="group transition-colors duration-300 text-gray-400 hover:text-white"
+                ><i
+                  class="bi bi-gear text-gray-400 group-hover:text-cyan-500"
+                ></i>
+                Services</a
+              >
+              <a
+                href="#contactos"
+                class="group transition-colors duration-300 text-gray-400 hover:text-white"
+                ><i
+                  class="bi bi-envelope text-gray-400 group-hover:text-cyan-500"
+                ></i>
+                Contact</a
+              >
+            </nav>
+
+            <footer class="text-center text-gray-400 mt-[4rem] lg:mt-[350px]">
+              <p>&copy; Copyrigth Enmer Suasaca</p>
+            </footer>
+          </div>
+        </div>
+        <!-- Aqui finaliza el aside -->
+
+        <!-- Aqui inicia el contenido principal -->
+        <main class=" w-full lg:w-[85%] flex flex-col mx-auto">
+          <!-- Aqui comienza la seccion Home -->
+          <div
+            class="home hidden lg:block w-full h-screen"
+            style="
+              background-image: url(./src/img/fondo.jpg);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="box w-[60%] flex mx-auto text-white">
+              <div class="name w-1/2 md:w-[60%]">
+                <h1 id="texto" class=" text-6xl font-semibold tracking-tighter mt-80">
+                  <!-- animacion -->
+                </h1>
+                <p id="front" class="text-3xl mt-2 animate-pulse">
+                  <!-- aniamcion -->
+                  <span class=" p-1"></span>
+                </p>
+              </div>
+              <div class="box-vacia w-1/2 md:w-[40%] border invisible">
+                <span>d</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aqui finaliza la seccion Home -->
+
+          <!-- Aqui inicia la seccion about -->
+          <div id="about" class="about w-full">
+            <div class="w-[80%] mx-auto">
+              <div class="about">
+                <h2 class="text-3xl mt-6 font-semibold text-gray-950">About</h2>
+                <img
+                  class="w-12 text-cyan-500"
+                  src="./src/img/linea.svg"
+                  alt="linea svg"
+                />
+                <p class="text-gray-400 lg:text-black">
+                  Como desarrollador Web. Tengo un profundo entusiasmo por la tecnologia, sobre su avance y su funcion hoy en dia. Mi enfoque es crear y mantener aplicaciones y sitios web atractivos y efectivos que se alineen a las necesidades y espectativas del publico objetivo.
+                </p>
+                <section class="w-full flex flex-col lg:flex-row mt-8">
+                  <div data-aos="fade-right" class="my-img w-full lg:w-[30%]">
+                    <img class="mx-auto md:rounded-full lg:rounded-none" src="./src/img/yo-48.webp" alt="yo"/>
+                  </div>             
+                  <div class="description w-full lg:w-[70%]">
+                    <h2 class="mt-4 text-2xl text-gray-950 font-semibold">
+                      Front-End Developer
+                    </h2>
+                    <p class="mt-3 text-gray-400 lg:text-black">
+                      Como Desarrollador Web y estuadiante de la carrera de TEC Ing. Software me dedico a crear aplicaciones y sitios web atractivos, funcionales y responsivos. Que reflejen la identidad de la marca y brinden una experiencia de usuario excepcional. Utilizo mis habilidades  para mantener, dar soporte y crear sitios web atractivos y funcionales.  
+                    </p>
+                    <div
+                      class="enlaces w-full  lg:w-[90%] mt-3  p-2 flex flex-col lg:flex-row justify-between"
+                    >
+                      <div class="file-1">
+                        <div class="github mb-4">
+                          <i class="bi bi-caret-right-fill text-2xl text-gray-950"></i>
+                          <strong>Website: </strong>
+                          <a class="text-gray-400 lg:text-black" href="https://github.com/EnmerPe" target="_blank">github.com/EnmerPe</a>
+                        </div>
+
+                        <div class="github mt-4">
+                          <i class="bi bi-caret-right-fill text-2xl text-gray-950"></i>
+                          <strong>Cel: </strong>
+                          <span class="text-gray-400 lg:text-black">*</span>
+                        </div>
+
+                        <div class="github mt-4">
+                          <i class="bi bi-caret-right-fill text-2xl text-gray-950"></i>
+                          <strong>Ciudad: </strong>
+                          <a class="text-gray-400 lg:text-black" href="https://maps.app.goo.gl/9WWimYLw5zztzQBE7" target="_blank">Juliaca - Puno - Peru</a>
+                        </div>
+                      </div>
+                      <div class="file-2 mt-4 lg:mt-0">
+                        <div class="github">
+                          <i class="bi bi-caret-right-fill text-2xl text-gray-950"></i>
+                          <strong>Email: </strong>
+                          <span class="text-gray-400 lg:text-black">enmersch@gmail.com</span>
+                        </div>
+
+                        <div class="github mt-4">
+                          <i class="bi bi-caret-right-fill text-2xl text-gray-950"></i>
+                          <strong>Freelance: </strong>
+                          <span class="text-gray-400 lg:text-black">Disponible</span>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aqui finaliza la seccion About -->
+
+          <!-- aqui inicia la seccion soft skills -->
+          <div id="about" class="skills w-full  mb-5 lg:mb-16">
+            <div class="w-[80%]  mx-auto">
+              <div class="skills">
+                <h2 class="text-3xl mt-10 lg:mt-36 font-semibold text-gray-950">
+                  Soft skills
+                </h2>
+                <img
+                  class="w-12 text-cyan-500"
+                  src="./src/img/linea.svg"
+                  alt="linea svg"
+                />
+                <p>
+                  Me encanta trabajar en equipo, aprender nuevas tecnologias y habilidades para mejorar mi trabajo, soy una persona responsable, comprometida y proactiva.
+                </p>
+                <section class="hability w-full  mt-10  flex flex-col lg:flex-row">
+                  <!-- skill 1 -->
+                  <div data-aos="zoom-in-down" class="happy w-full flex mx-auto ">
+                    <div class="icon ">
+                      <i class="bi bi-emoji-smile text-5xl text-cyan-500"></i>
+                    </div>
+                    <div class="des flex flex-col ml-2">
+                      <span class="text-4xl font-bold">100</span>
+                      <strong class="mt-4 text-gray-950">Flexibilidad</strong>
+                      <p>predispuesto a los cambios</p>
+                    </div>
+                  </div>
+                  <!-- skill 2 -->
+                  <div data-aos="zoom-in-down" class="journal w-full mt-5 lg:mt-0  flex mx-auto">
+                    <div class="icon">
+                      <i class="bi bi-journal-richtext text-5xl text-cyan-500"></i>
+                    </div>
+                    <div class="des flex flex-col ml-2">
+                      <span class="text-4xl font-bold">100</span>
+                      <strong class="mt-4 text-gray-950">Responsabilidad</strong>
+                      <p>enfocado en lograr el objetivo propuesto</p>
+                    </div>
+                  </div>
+                  <!-- skill 3 -->
+                  <div data-aos="zoom-in-down" class="headset w-full mt-5 lg:mt-0 flex mx-auto">
+                    <div class="icon">
+                      <i class="bi bi-headset text-5xl text-cyan-500"></i>
+                    </div>
+                    <div class="des flex flex-col ml-2">
+                      <span class="text-4xl font-bold">100</span>
+                      <strong class="mt-4 text-gray-950">Comunicacion</strong>
+                      <p>La comunicacion efectiva siempre es muy importante</p>
+                    </div>
+                  </div>
+                  <!-- skill 4 -->
+                  <div data-aos="zoom-in-down" class="people w-full mt-5 lg:mt-0 flex mx-auto">
+                    <div class="icon">
+                      <i class="bi bi-people-fill text-5xl text-cyan-500"></i>
+                    </div>
+                    <div class="des flex flex-col ml-2">
+                      <span class="text-4xl font-bold">100</span>
+                      <strong class="mt-4 text-gray-950">Trabajo en equipo</strong>
+                      <p>Siempre predispuesto</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- Aqui finalzia la seccion soft skills -->
+
+          <!-- Aqui inicia la seccioin skills -->
+          <div id="about" class="skills w-full bg-blue-50 pb-16">
+            <div class="skills-1 w-[80%] mx-auto">
+              <h2 class="text-3xl mt-12 font-semibold text-gray-950">
+                Skills
+              </h2>
+              <img
+                class="w-12 text-cyan-500"
+                src="./src/img/linea.svg"
+                alt="linea svg"
+              />
+              <p class="text-gray-400 lg:text-black">
+                Como desarrollador web poseo una amplia gama de habilidades y experiencia en diversas tecnologias y lenguajes de programacion mi trabajo se centra en la creacion de sitios web y apliciones web utilizando <strong class="text-gray-600 text-sm">HTML5, CSS3, TAILWIND, JAVASCRIPT, REACT, MONGO DB, EXPRESS JS y NODE JS.</strong> 
+              </p>
+
+              <div class="porcentajes-skills  flex flex-col lg:flex-row w-full mt-10 ">
+                <!-- fila1 -->
+              <div class="caja1 w-full lg:w-[50%] gap-x-5">
+              <div class="html5-g flex flex-col">
+                  <div class="html5 flex justify-between px-5">
+                  <span class="font-bold">HTML5</span>
+                  <span class="font-bold">90%</span>
+                  </div>
+                  <div class="w-[90%] border  rounded-full  m-2">
+                  <div class="w-full border rounded-full">
+                  <div class="bg-cyan-500 text-white text-center  rounded-full" style="width: 90%;">
+                       90%
+                  </div>
+                  </div>
+                  </div>
+                </div> 
+                
+                <div class="html5-g flex flex-col">
+                  <div class="html5 flex justify-between px-5">
+                  <span class="font-bold">CSS3</span>
+                  <span class="font-bold">70%</span>
+                  </div>
+                  <div class="w-[90%] border  rounded-full  m-2">
+                  <div class="w-full border rounded-full">
+                  <div class="bg-cyan-500 text-white text-center  rounded-full" style="width: 70%;">
+                       70%
+                  </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="html5-g flex flex-col">
+                  <div class="html5 flex justify-between px-5">
+                  <span class="font-bold">JAVASCRIPT</span>
+                  <span class="font-bold">60%</span>
+                  </div>
+                  <div class="w-[90%] border rounded-full  m-2">
+                  <div class="w-full border rounded-full">
+                  <div class="bg-cyan-500 text-white text-center  rounded-full" style="width: 60%;">
+                       60%
+                  </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="html5-g flex flex-col">
+                  <div class="html5 flex justify-between px-5">
+                  <span class="font-bold">REACT</span>
+                  <span class="font-bold">50%</span>
+                  </div>
+                  <div class="w-[90%] border  rounded-full  m-2">
+                  <div class="w-full border rounded-full">
+                  <div class="bg-cyan-500 text-white text-center  rounded-full" style="width: 50%;">
+                       50%
+                  </div>
+                  </div>
+                  </div>
+                </div>
+                </div>
+                
+                <!-- fila2 -->
+                <div class="caja2 w-full lg:w-[50%] gap-x-5"> 
+                  <div class="html5-g flex flex-col">
+                    <div class="html5 flex justify-between px-5">
+                    <span class="font-bold">TAILWIND</span>
+                    <span class="font-bold">87%</span>
+                    </div>
+                    <div class="w-[90%] border rounded-full  m-2">
+                    <div class="w-full border rounded-full">
+                    <div class="bg-cyan-500 text-white text-center  rounded-full" style="width: 87%;">
+                         87%
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="html5-g flex flex-col">
+                    <div class="html5 flex justify-between px-5">
+                    <span class="font-bold">GIT</span>
+                    <span class="font-bold">60%</span>
+                    </div>
+                    <div class="w-[90%] border  rounded-full  m-2">
+                    <div class="w-full border rounded-full">
+                    <div class="bg-cyan-500 text-white text-center  rounded-full" style="width: 60%;">
+                         60%
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="html5-g flex flex-col">
+                    <div class="html5 flex justify-between px-5">
+                    <span class="font-bold">GITHUB</span>
+                    <span class="font-bold">60%</span>
+                    </div>
+                    <div class="w-[90%] border bg-blue-50 rounded-full  m-2">
+                    <div class="w-full border rounded-full">
+                    <div class="bg-cyan-500 text-white text-center  rounded-full" style="width: 60%;">
+                         60%
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              </div>
+            </div>
+            <!-- Aqui finaliza la seccion skills porcentajes -->
+            <!-- Aqui inicia la seccion sumary o resumen -->
+            <div id="resumen" class="sumary w-full ">
+              <div class="sumary-g w-[80%] pb-10  mx-auto">
+                <h2 class="text-3xl mt-12 font-semibold text-gray-950">
+                  Sumary
+                </h2>
+                <p class="mt-7">En resumen, mi entusiasmo por la tecnología y la programacion me permite crear contenido atractivo y efectivo, y diseñar sitios web que brinden un
+                  experiencia de usuario excepcional. Mi objetivo es ayudar a las empresas a alcanzar sus objetivos comerciales a través de una comunicación efectiva de un sitio web.</p>
+
+                <section class="educa-exp  pb-10  w-full flex flex-col lg:flex-row mt-12">
+                  <article class="educacion  border-l-4 p-4 border-gray-500 w-full lg:w-[45%] mx-auto">
+                    <div class="eppp text-center lg:text-left">
+                    <h2 class="text-3xl font-semibold ">Education</h2>
+                    <h3 class="uppercase font-semibold mt-4 mb-3 ">Especializacion Profesional en programacion web</h3>
+                    <span class="border p-1 bg-cyan-200 ">2024 en curso</span>
+                    <p class="mt-4 ">Se enfoca en programación web, desarrollo de aplicaciones web MERN Y Front-End Developer. Mi entrenamiento me ha equipado con las habilidades necesarias para diseñar, desarrollar, construir, programar e implementar aplicaciones web con
+                      criterios de calidad y seguridad.</p>
+                    </div>
+
+                    <div class="dev-java text-center lg:text-left mt-5 lg:mt-0">
+                    <h3 class="uppercase font-semibold mt-4 mb-3">Desarrollador Front-End</h3>
+                    <span class="border p-1 bg-cyan-200">Enero 2022 - Julio 2022</span>
+                    <p class="mt-4">Mi viaje educativo como programador ha sido rico y desafiante,
+                      enfocado en adquirir habilidades técnicas y conceptuales en programación y desarrollo web Front-End
+                      . Durante este tiempo, he desarrollado un sólido
+                      comprensión de los conceptos fundamentales de programación, incluida la lógica. Algoritmos y estructura de la programacion.</p>
+                    </div>
+
+                    <div class="comunicador text-center lg:text-left mt-5 lg:mt-0">
+                    <h3 class="uppercase font-semibold mt-4 mb-3">Especializacion Tecnica | Profesional en Ing. de Software</h3>
+                    <span class="border p-1 bg-cyan-200">2024 en curso</span>
+                    <h4 class="italic mt-3 text-gray-500">Estudiante de CERTUS, IDAT Y SENATI</h4>
+                    <p class="mt-4">Como desarrollador Web actualmente estoy cursando la carrera de Tec - Ing. de Software lo cual estoy abarcando diferentes ramas de la programacion Como: logica de la programacion, POO, Diseño y modelado de softaware, gestion de base 
+                      de datos, lenguajes de programacion, desarrollo web etc. Tambien estoy en constante aprendizaje y actualizacion en talleres y cursos sobre mi Especializacion es Desarrollo Web. 
+                    </p>
+                    </div>
+                    
+                  </article>
+
+                  <article class="experiencia  border-l-4 p-4 border-gray-500  w-full lg:w-[45%] mt-10 lg:mt-0 mx-auto">
+                    <div class="prfe-g text-center lg:text-left mt-5 lg:mt-0">
+                      <h2 class="text-3xl font-semibold">Professional experience</h2>
+                      <h3 class="uppercase font-semibold mt-4 mb-3">Desarrollador Web Full stack</h3>
+                      <span class="border p-1 bg-cyan-200">Enero 2022 - Abril 2022</span>
+                      <h4 class="italic mt-3 text-gray-500">Empresa de Software Juliaca</h4>
+                      <p class="mt-4">Durante mi participación en el proyecto, tuve la oportunidad de adquirir una amplia gama de habilidades en tecnologías y programación. Este proyecto me permitió desarrollar un sitio web desde el diseño hasta
+                        implementación, utilizando una variedad de tecnologías tanto en el frontend y un poco en el backend. Durante mi participacion el proyecto junto a mi equipo desarrollamos distintas paginas web y un sitio web en especifico de la empresa.</p>
+  
+                      <p class="mt-4">En la interfaz, utilicé HTML5, CSS3, BootStrap y javascript para crear un
+                        página web atractiva y funcional. Estas tecnologías me permitieron diseñar un
+                        interfaz de usuario receptiva que se adapta a diferentes tamaños de pantalla, proporcionando una
+                        experiencia de usuario óptima.</p>
+                        <h4 class="italic mt-3 text-gray-500">Proyecto Freelancer</h4>
+                      <p class="mt-4">Durante este proyecto tambien tuve la oportunidad de adquirir una amplia gama de habilidades, este proyecto tambien me permtio desarrollar un sitio web desde el diseño hasta 
+                        la implementación utilizando una variedad de tecnologias. Utilize HTML5, CSS3, Tailwind y javascript para crear un
+                        página web atractiva y funcional. Estas tecnologías valga la redundancia tambien me permitieron diseñar un
+                        interfaz de usuario receptiva que se adapta a diferentes tamaños de pantalla, proporcionando un
+                        experiencia de usuario óptima.
+                      </p>
+                    </div>                   
+                  </article>
+                </section>
+              </div>
+            </div>
+            <!-- Aqui finaliza la seccion suamry o resumen -->
+
+            <!-- Aqui comienza la seccion portafolio -->
+            <div id="portafolio" class="portafolio w-full bg-blue-50">
+              <div class="port-g w-[80%] mx-auto mb-16">
+                <h2 class="text-3xl mt-10 lg:mt-16 font-semibold text-blue-950">
+                  Portfolio
+                </h2>
+                <img
+                  class="w-12 text-cyan-500"
+                  src="./src/img/linea.svg"
+                  alt="linea svg"
+                />
+                <p>
+                  Mi objetivo es proporcionar contenido digital de alta calidad para ayudar a las empresas y personas a alcanzar sus objetivos y crecer en el mundo digital. 
+                </p>
+
+                <section class="trabajos w-full flex flex-col my-2 lg:flex-row mt-6">
+                  <div data-aos="flip-left" class="img1 mx-auto ">
+                    <a href="./src/img/calcualdoraBasicaof.webp" target="_blank"> <img src="./src/img/calcualdoraBasicaof.webp" alt="calcualdoraBasicaof"></a>
+                  </div>
+                  <div data-aos="flip-right" class="img2 mx-auto mt-7 lg:mt-0">
+                   <a href="./src/img/MaquetacionDigitalOcean.webp" target="_blank"><img src="./src/img/digitalocean.webp" class="w-full mx-auto" alt="digitalocean"></a> 
+                  </div>
+                  <div data-aos="flip-left" class="img3  mx-auto mt-7 lg:mt-0">
+                   <a href="./src/img/calculadoraIMC.webp" target="_blank"><img src="./src/img/calculadoraIMC.webp" alt="calculadoraIMC"></a> 
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- Aqui finaliza la seccion portafolio -->
+
+            <!-- Aqui comienza la seccion services -->
+            <div id="servicios" class="services w-full ">
+              <div class="sevices-g w-[80%] mx-auto mt-16 mb-10">
+                <h2 class="text-3xl mt-10 lg:mt-16 font-semibold text-blue-950">
+                  Services
+                </h2>
+                <img
+                  class="w-12 text-cyan-500"
+                  src="./src/img/linea.svg"
+                  alt="linea svg"
+                />
+                <p class="text-gray-400 lg:text-black">
+                  Mi habilidad para crear y mantener sitios web atractivos y funcionales me ha permitido contribuir
+                  significativamente a proyectos exitosos en el pasado. Estoy muy motivado y dispuesto a aprender continuamente para mantenerme a la vanguardia de la industria. 
+                </p>
+
+                <section class="services-fle w-full gap-x-3 flex flex-col lg:flex-row mt-20">
+                  <!-- target 1 -->
+                  <div data-aos="zoom-in-down" class="target1 w-full flex">
+                  <div class="icon">
+                    <i class="bi bi-gear-fill text-5xl"></i>
+                  </div>
+                  <div class="info flex-col ml-2">
+                    <h2 class="text-2xl text-gray-800">Desarrollo de Software</h2>
+                    <p class="mt-4 ">Este servicio consiste en la creación, diseño, implementación, prueba y mantenimiento de programas informáticos y sistemas.</p>
+                  </div>
+                  </div>
+                  <!-- atrget2 -->
+                  <div data-aos="zoom-in-down" class="target2 w-full flex mt-5 lg:mt-0">
+                    <div class="icon">
+                      <i class="bi bi-reception-4 text-5xl"></i>
+                    </div>
+                    <div class="info flex-col ml-2">
+                      <h2 class="text-2xl text-gray-800">Desarrollo de paginas web.</h2>
+                      <p class="mt-4 ">Diseño y desarrollo de comercio electrónico
+                        sitios web, portales de negocios, páginas de destino y
+                        sitios optimizados para dispositivos móviles: Estos sitios web son altamente
+                        funcional y se ajusta al
+                        necesidades específicas de los dientes.</p>
+                    </div>
+                    </div>
+                    <!-- atarget3 -->
+                    <div data-aos="zoom-in-down" class="target3  w-full flex mt-5 lg:mt-0">
+                      <div class="icon">
+                        <i class="bi bi-brightness-high-fill text-5xl"></i>
+                      </div>
+                      <div class="info flex-col ml-2">
+                        <h2 class="text-2xl text-gray-800">Diseño y programacion web.</h2>
+                        <p class="mt-4 ">Esto implica crear sitios web desde cero, o
+                            mejorar los sitios web existentes para mejorar
+                          su funcionalidad y rendimiento.</p>
+                      </div>
+                      </div>
+                </section>
+              </div>
+            </div>
+            <!-- Aqui finalzia la seccion services -->
+
+            <!-- Aqui comienza la seccion contactos -->
+            <div id="contactos" class="contact w-full ">
+              <div class="contact-g w-[80%] mx-auto mb-14">
+                <h2 class="text-3xl mt-10 lg:mt-32 font-semibold text-blue-950">
+                  Contact
+                </h2>
+                <img
+                  class="w-12 text-cyan-500"
+                  src="./src/img/linea.svg"
+                  alt="linea svg"
+                />
+
+                <section class="contact flex flex-col lg:flex-row mt-5">
+                  <div class="contac1 w-full lg:w-[45%]  shadow-2xl mx-auto  rounded-lg">
+                    <!-- location -->
+                    <div class="contact-one flex mt-4 ml-5">
+                      <div class="icon">
+                        <i class="bi bi-geo-alt-fill text-3xl text-cyan-500"></i>
+                      </div>
+                      <div class="info flex-col ml-3">
+                        <h2 class="text-xl">Location:</h2>
+                        <span class="text-gray-400 lg:text-black">Juliaca - Puno - Peru</span>
+                      </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="contact-one flex mt-4 ml-5">
+                      <div class="icon">
+                        <i class="bi bi-envelope-fill text-3xl text-cyan-500"></i>
+                      </div>
+                      <div class="info flex-col ml-3">
+                        <h2 class="text-xl">Email:</h2>
+                        <span class="text-gray-400 lg:text-black">enmersch@gmail.com</span>
+                      </div>
+                    </div>
+                    <!-- call -->
+
+                    <div class="contact-one flex mt-4 ml-5 mb-9">
+                      <div class="icon">
+                        <i class="bi bi-phone-fill text-3xl text-cyan-500"></i>
+                      </div>
+                      <div class="info flex-col ml-3">
+                        <h2 class="text-xl">Call:</h2>
+                        <span class="text-gray-400 lg:text-black">*</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact2  w-full lg:w-[45%]   mx-auto shadow-2xl rounded-lg mt-5 lg:mt-0">
+                    <!-- website -->
+                    <div class="contact-one flex mt-4 ml-5">
+                      <div class="icon">
+                        <i class="bi bi-pci-card-network text-3xl text-cyan-500"></i>
+                      </div>
+                      <div class="info flex-col ml-3">
+                        <h2 class="text-xl">Website</h2>
+                        <a class="text-gray-400 lg:text-black" href="enmer.com.io">enmer.github.io</a>
+                      </div>
+                    </div>
+                    <!-- github -->
+                    <div class="contact-one flex mt-4 ml-5">
+                      <div class="icon">
+                        <i class="bi bi-github text-3xl text-cyan-500"></i>
+                      </div>
+                      <div class="info flex-col ml-3">
+                        <h2 class="text-xl">Github</h2>
+                        <a class="text-gray-400 lg:text-black" href="https://github.com/EnmerPe" target="_blank" rel="noopener noreferrer">github.com/EnmerPe</a>
+                      </div>
+                    </div>
+                    <!-- linkedin -->
+                    <div class="contact-one flex mt-4 ml-5 mb-9">
+                      <div class="icon">
+                        <i class="bi bi-linkedin text-3xl text-cyan-500"></i>
+                      </div>
+                      <div class="info flex-col ml-3">
+                        <h2 class="text-xl">Linkedin</h2>
+                        <a class="text-gray-400 lg:text-black" href="https://www.linkedin.com/in/emed-sc-787734254/" target="_blank" rel="noopener noreferrer">Emed SC</a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- aqui fianlzia la seccion contactos -->
+            <!-- Aqui comienza el footer -->
+            <div class="footer w-full bg-gray-300">
+              <footer class="footer-g  flex justify-around items-center h-12">
+                <div class="text-gray-600 text-sm">&copy Desarrollado por enmersch@gmail.com</div>
+                <div class="hidden lg:block">
+                  <a class="underline text-gray-600 text-sm" href="#">Inicio | </a>
+                  <a class="underline text-gray-600 text-sm" href="#">Ir hacia arriba ↑</a>
+                </div>
+              </footer>
+            </div>
+            <!-- Aqui finaliza el footer -->
+          </main>
+          <button class=" btn-scrolltop fixed bottom-5 right-5 cursor-pointer" id="btn_scrolltop">
+            <i class="bi bi-arrow-up-square-fill text-4xl text-gray-950"></i>
+          </button>
+        </div>
+      </div>
+
+      <script src="./src/js/main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+        });
+      </script>
+  </body>
+</html>
